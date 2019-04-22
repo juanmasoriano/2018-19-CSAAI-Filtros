@@ -7,17 +7,43 @@
     <script src="filtro1.js"></script>
   </head>
   <body onload="main();">
-    <canvas id="display"></canvas>
-    <img src="black-hole.jpg" id="imagesrc">
-    <br>
+    <header>
+      <section>
+        <aside id="col1">
+          <canvas id="display"></canvas>
+        </aside>
+      </section>
 
-    <input type="range" id="deslizador" min="0" max="255" value="255"/> Rojo
-    <p id="range_value">00</p>
+      <section>
+        <aside id="col2">
+          <img src="black-hole.jpg" id="imagesrc">
+        </aside>
+      </section>
+    </header>
 
-    <input type="range" id="deslizador1" min="0" max="255" value="255"/> Verde
-    <p id="range_value">00</p>
+    <section>
+      <aside id="col3">
 
-    <input type="range" id="deslizador" min="0" max="255" value="255"/> Azul
-    <p id="range_value">00</p>
+        <h1>Filtrado RGB</h1>
+
+        <input type="range" id="deslizador" min="0" max="255" value="255"/> Rojo
+        <p id="range_value">00</p>
+
+        <input type="range" id="deslizador1" min="0" max="255" value="255"/> Verde
+        <p id="range_value1">00</p>
+
+        <input type="range" id="deslizador2" min="0" max="255" value="255"/> Azul
+        <p id="range_value2">00</p>
+      </aside>
+    </section>
+
+    <section>
+      <aside id="col4">
+        <h1>Grises</h1>
+
+        <button type="button" id="grises"> Grises</button>
+      </aside>
+    </section>
+
   </body>
 </html>
